@@ -1,53 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Melbourne City Trees on My New Hugo Site</title>
-    <link>https://github.com/veronica-desantos/veronica-desantos.github.io/</link>
-    <description>Recent content in Melbourne City Trees on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 18:38:59 +0200</lastBuildDate><atom:link href="https://github.com/veronica-desantos/veronica-desantos.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bokeh</title>
-      <link>https://github.com/veronica-desantos/veronica-desantos.github.io/Bokeh/</link>
-      <pubDate>Sun, 09 May 2021 18:26:02 +0200</pubDate>
-      
-      <guid>https://github.com/veronica-desantos/veronica-desantos.github.io/Bokeh/</guid>
-      <description>Bokeh.set_log_level(&#34;info&#34;);{&#34;89261226-eaca-4e2d-9ce8-f19d280be23e&#34;:{&#34;defs&#34;:[{&#34;extends&#34;:null,&#34;module&#34;:null,&#34;name&#34;:&#34;DataModel&#34;,&#34;overrides&#34;:[],&#34;properties&#34;:[]}],&#34;roots&#34;:{&#34;references&#34;:[{&#34;attributes&#34;:{&#34;source&#34;:{&#34;id&#34;:&#34;1033&#34;}},&#34;id&#34;:&#34;1037&#34;,&#34;type&#34;:&#34;CDSView&#34;},{&#34;attributes&#34;:{&#34;bottom_units&#34;:&#34;screen&#34;,&#34;fill_alpha&#34;:0.5,&#34;fill_color&#34;:&#34;lightgrey&#34;,&#34;left_units&#34;:&#34;screen&#34;,&#34;level&#34;:&#34;overlay&#34;,&#34;line_alpha&#34;:1.0,&#34;line_color&#34;:&#34;black&#34;,&#34;line_dash&#34;:[4,4],&#34;line_width&#34;:2,&#34;right_units&#34;:&#34;screen&#34;,&#34;syncable&#34;:false,&#34;top_units&#34;:&#34;screen&#34;},&#34;id&#34;:&#34;1025&#34;,&#34;type&#34;:&#34;BoxAnnotation&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1048&#34;,&#34;type&#34;:&#34;UnionRenderers&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1043&#34;,&#34;type&#34;:&#34;BasicTickFormatter&#34;},{&#34;attributes&#34;:{&#34;below&#34;:[{&#34;id&#34;:&#34;1011&#34;}],&#34;center&#34;:[{&#34;id&#34;:&#34;1014&#34;},{&#34;id&#34;:&#34;1018&#34;}],&#34;left&#34;:[{&#34;id&#34;:&#34;1015&#34;}],&#34;renderers&#34;:[{&#34;id&#34;:&#34;1036&#34;}],&#34;title&#34;:{&#34;id&#34;:&#34;1039&#34;},&#34;toolbar&#34;:{&#34;id&#34;:&#34;1026&#34;},&#34;x_range&#34;:{&#34;id&#34;:&#34;1003&#34;},&#34;x_scale&#34;:{&#34;id&#34;:&#34;1007&#34;},&#34;y_range&#34;:{&#34;id&#34;:&#34;1005&#34;},&#34;y_scale&#34;:{&#34;id&#34;:&#34;1009&#34;}},&#34;id&#34;:&#34;1002&#34;,&#34;subtype&#34;:&#34;Figure&#34;,&#34;type&#34;:&#34;Plot&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1024&#34;,&#34;type&#34;:&#34;HelpTool&#34;},{&#34;attributes&#34;:{&#34;active_multi&#34;:null,&#34;tools&#34;:[{&#34;id&#34;:&#34;1019&#34;},{&#34;id&#34;:&#34;1020&#34;},{&#34;id&#34;:&#34;1021&#34;},{&#34;id&#34;:&#34;1022&#34;},{&#34;id&#34;:&#34;1023&#34;},{&#34;id&#34;:&#34;1024&#34;}]},&#34;id&#34;:&#34;1026&#34;,&#34;type&#34;:&#34;Toolbar&#34;},{&#34;attributes&#34;:{&#34;formatter&#34;:{&#34;id&#34;:&#34;1040&#34;},&#34;major_label_policy&#34;:{&#34;id&#34;:&#34;1042&#34;},&#34;ticker&#34;:{&#34;id&#34;:&#34;1016&#34;}},&#34;id&#34;:&#34;1015&#34;,&#34;type&#34;:&#34;LinearAxis&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1045&#34;,&#34;type&#34;:&#34;AllLabels&#34;},{&#34;attributes&#34;:{&#34;data&#34;:{&#34;x&#34;:[1,2],&#34;y&#34;:[3,4]},&#34;selected&#34;:{&#34;id&#34;:&#34;1047&#34;},&#34;selection_policy&#34;:{&#34;id&#34;:&#34;1048&#34;}},&#34;id&#34;:&#34;1033&#34;,&#34;type&#34;:&#34;ColumnDataSource&#34;},{&#34;attributes&#34;:{&#34;axis&#34;:{&#34;id&#34;:&#34;1015&#34;},&#34;dimension&#34;:1,&#34;ticker&#34;:null},&#34;id&#34;:&#34;1018&#34;,&#34;type&#34;:&#34;Grid&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1042&#34;,&#34;type&#34;:&#34;AllLabels&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1016&#34;,&#34;type&#34;:&#34;BasicTicker&#34;},{&#34;attributes&#34;:{&#34;fill_alpha&#34;:{&#34;value&#34;:0.1},&#34;fill_color&#34;:{&#34;value&#34;:&#34;#1f77b4&#34;},&#34;line_alpha&#34;:{&#34;value&#34;:0.1},&#34;line_color&#34;:{&#34;value&#34;:&#34;#1f77b4&#34;},&#34;x&#34;:{&#34;field&#34;:&#34;x&#34;},&#34;y&#34;:{&#34;field&#34;:&#34;y&#34;}},&#34;id&#34;:&#34;1035&#34;,&#34;type&#34;:&#34;Circle&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1012&#34;,&#34;type&#34;:&#34;BasicTicker&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1040&#34;,&#34;type&#34;:&#34;BasicTickFormatter&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1020&#34;,&#34;type&#34;:&#34;WheelZoomTool&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1009&#34;,&#34;type&#34;:&#34;LinearScale&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1039&#34;,&#34;type&#34;:&#34;Title&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1019&#34;,&#34;type&#34;:&#34;PanTool&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1005&#34;,&#34;type&#34;:&#34;DataRange1d&#34;},{&#34;attributes&#34;:{&#34;data_source&#34;:{&#34;id&#34;:&#34;1033&#34;},&#34;glyph&#34;:{&#34;id&#34;:&#34;1034&#34;},&#34;hover_glyph&#34;:null,&#34;muted_glyph&#34;:null,&#34;nonselection_glyph&#34;:{&#34;id&#34;:&#34;1035&#34;},&#34;view&#34;:{&#34;id&#34;:&#34;1037&#34;}},&#34;id&#34;:&#34;1036&#34;,&#34;type&#34;:&#34;GlyphRenderer&#34;},{&#34;attributes&#34;:{&#34;overlay&#34;:{&#34;id&#34;:&#34;1025&#34;}},&#34;id&#34;:&#34;1021&#34;,&#34;type&#34;:&#34;BoxZoomTool&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1007&#34;,&#34;type&#34;:&#34;LinearScale&#34;},{&#34;attributes&#34;:{&#34;axis&#34;:{&#34;id&#34;:&#34;1011&#34;},&#34;ticker&#34;:null},&#34;id&#34;:&#34;1014&#34;,&#34;type&#34;:&#34;Grid&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1003&#34;,&#34;type&#34;:&#34;DataRange1d&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1022&#34;,&#34;type&#34;:&#34;SaveTool&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1023&#34;,&#34;type&#34;:&#34;ResetTool&#34;},{&#34;attributes&#34;:{&#34;fill_color&#34;:{&#34;value&#34;:&#34;#1f77b4&#34;},&#34;line_color&#34;:{&#34;value&#34;:&#34;#1f77b4&#34;},&#34;x&#34;:{&#34;field&#34;:&#34;x&#34;},&#34;y&#34;:{&#34;field&#34;:&#34;y&#34;}},&#34;id&#34;:&#34;1034&#34;,&#34;type&#34;:&#34;Circle&#34;},{&#34;attributes&#34;:{&#34;formatter&#34;:{&#34;id&#34;:&#34;1043&#34;},&#34;major_label_policy&#34;:{&#34;id&#34;:&#34;1045&#34;},&#34;ticker&#34;:{&#34;id&#34;:&#34;1012&#34;}},&#34;id&#34;:&#34;1011&#34;,&#34;type&#34;:&#34;LinearAxis&#34;},{&#34;attributes&#34;:{},&#34;id&#34;:&#34;1047&#34;,&#34;type&#34;:&#34;Selection&#34;}],&#34;root_ids&#34;:[&#34;1002&#34;]},&#34;title&#34;:&#34;Bokeh Application&#34;,&#34;version&#34;:&#34;2.3.0&#34;}}(function() {var fn = function() {Bokeh.safely(function() {(function(root) {function embed_document(root) {var docs_json = document.getElementById(&#39;1148&#39;).textContent;var render_items = [{&#34;docid&#34;:&#34;89261226-eaca-4e2d-9ce8-f19d280be23e&#34;,&#34;root_ids&#34;:[&#34;1002&#34;],&#34;roots&#34;:{&#34;1002&#34;:&#34;1044757f-41aa-4b32-bb9f-06b12ec084fd&#34;}}];root.Bokeh.embed.embed_items(docs_json, render_items);}if (root.Bokeh !== undefined) {embed_document(root);} else {var attempts = 0;var timer = setInterval(function(root) {if (root.Bokeh !== undefined) {clearInterval(timer);embed_document(root);} else {attempts++;if (attempts  100) {clearInterval(timer);console.log(&#34;Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing&#34;</description>
-    </item>
-    
-    <item>
-      <title>Veronica</title>
-      <link>https://github.com/veronica-desantos/veronica-desantos.github.io/Introduction/</link>
-      <pubDate>Sun, 09 May 2021 18:26:02 +0200</pubDate>
-      
-      <guid>https://github.com/veronica-desantos/veronica-desantos.github.io/Introduction/</guid>
-      <description>Introduction</description>
-    </item>
-    
-    <item>
-      <title>Creating Beautiful Presentations with Story</title>
-      <link>https://github.com/veronica-desantos/veronica-desantos.github.io/about/adirondack/</link>
-      <pubDate>Tue, 08 May 2018 16:00:00 -0500</pubDate>
-      
-      <guid>https://github.com/veronica-desantos/veronica-desantos.github.io/about/adirondack/</guid>
-      <description>&lt;p&gt;This is a &amp;ldquo;talk&amp;rdquo; page in Story, which is the permanent homepage for a talk
-you&amp;rsquo;ve given at a specific event. It&amp;rsquo;s designed to showcase your appearance by
-bringing together information about the event, along with your slides and extra
-information like a video of your talk. In this way you can build a portfolio of
-your speaking history.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Creating Beautiful Presentations with Story</title>
-      <link>https://github.com/veronica-desantos/veronica-desantos.github.io/slides/adirondack/</link>
-      <pubDate>Wed, 25 Apr 2018 09:50:00 -0700</pubDate>
-      
-      <guid>https://github.com/veronica-desantos/veronica-desantos.github.io/slides/adirondack/</guid>
-      <description>class: title, smokescreen, shelf, no-footer background-image: url(leo-serrat-533922-unsplash.jpg)
-Creating Beautiful Presentations With Remark, Apron, Adirondack, and Descartes  The Story Remark Themes Story offers helper themes for creating beautiful presentations with Remark, using simple Markdown to create slide layouts.
- Apron defines the layouts&#39; structure and size. Adirondack adds typography, theme colors, and helpful features. Descartes provides element and image positioning and colors.  Story has a design goal of clean, simple Markdown content.</description>
-    </item>
-    
-  </channel>
-</rss>
