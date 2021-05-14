@@ -82,6 +82,25 @@
 	<p>Interactive visualization.</p>
 <h3 id="bokeh-visualization">Bokeh Visualization</h3>
 <p>The following graph is an interactive visualization of the 14 most common families of trees found in the data set throughout the years of 1997 - 2020.</p>
+<p>We found this extremely useful when comparing data, this graph gives you the ability to visualize multiple attributes within the same range in an easy and practical way.</p>
+<p>In this graph we are using vertical vars to show the data, although we used vbar() method to assing multiple values to the vertical vars - in this case the different families found in our dataset.</p>
+<p>We created an empty figure were we used a variety of parameters.</p>
+<ul>
+<li>x_range and y_range are used to set the horizontal and vertical dimentions and FactorRange was used to explicitly set the different values we have in Years.</li>
+<li>plot_width and plot_height are used to set the width and height of a plot.</li>
+<li>title, x_axis_label and y_axis_label are used to set the title and axis names.</li>
+<li>toolbar_location is set as None to hide the Bokeh toolbar.</li>
+</ul>
+<p>Then we added the bars, set colors and other attributes</p>
+<ul>
+<li>The colors for each crime are set with <strong>viridis</strong> color palette.</li>
+<li>bar = { } to store vbars</li>
+<li>items = <input disabled="" type="checkbox"> # for the custom legend</li>
+<li>vbar renders all the vertical bars and has some of the atttibutes we need to make this an interactive plot.</li>
+<li>alpha is used to show the lines drawn and specify the intensity of them (a float value between 0 and 1)</li>
+<li>muted_alpha is used to specify that muted lines should be drawn with a low alpha muted glyph.</li>
+<li>fill_color for the specific color to use.</li>
+</ul>
  <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
 <script type="text/javascript"> Bokeh.set_log_level("info");
 </script>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Random Forest Classification</title>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="https://veronica-desantos.github.io/index.xml">
+		<link rel="canonical" href="https://veronica-desantos.github.io/Classification/">
+		
+		<link rel="shortcut icon" type="image/png" href="https://veronica-desantos.github.io/apple-touch-icon-precomposed.png">
+		
+		
+		<meta name="generator" content="Hugo 0.82.1" />
+
+		
+		<meta property="og:title" content="Random Forest Classification" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="https://veronica-desantos.github.io/img/Classification.jpg" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="https://veronica-desantos.github.io/Classification/" />
+		<meta property="og:site_name" content="Random Forest Classification" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@" />
+
+
+		
+		<link rel="stylesheet" href="https://veronica-desantos.github.io/css/tachyons.min.css" />
+		<link rel="stylesheet" href="https://veronica-desantos.github.io/css/story.css" />
+		<link rel="stylesheet" href="https://veronica-desantos.github.io/css/descartes.css" />
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i|Quattrocento:400,700|Spectral:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+		
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script src="https://veronica-desantos.github.io/js/story.js"></script>
+
+	</head>
+	<body class="ma0 bg-white  page-kind-page is-page-true ">
+		
+		<header class="cover bg-top" style="background-image: url('https://veronica-desantos.github.io/img/Classification.jpg'); background-position: bottom;">
+			<div class="bg-black-30 bb bt">
+
+				<nav class="hide-print sans-serif  border-box pa3 ph5-l">
+					<a href="https://veronica-desantos.github.io" title="Home">
+						<img src="https://veronica-desantos.github.io/img/logo.jpg" class="w2 h2 br-100" alt="Melbourne City Trees" />
+					</a>
+					<div class="fr h2 pv2 tr">
+						<a class="link f5 ml2 dim near-white fas fa-rss-square" href="https://veronica-desantos.github.io/index.xml" title="RSS Feed"></a>
+						<a class="link f5 ml2 dim near-white fas fa-search" href="https://veronica-desantos.github.io/search/" role="search" title="Search"></a>
+					</div>
+				</nav>
+
+				<div id="hdr" class="tc-l pv4-ns pv5-l pv2 ph3 ph4-ns">
+					<h1 class="near-white mt1-ns f2 fw3 mb0 mt0 lh-title">Random Forest Classification</h1>
+					<h2 class="near-white mt3-l mb4-l fw1 f6 f3-l measure-wide-l center lh-copy mt2 mb3">
+						
+						
+							
+								Published
+								<time datetime="2021-05-08T18:25:02&#43;02:00">May 8, 2021</time>
+								<span class="display-print">by </span>
+								 in <a href="https://veronica-desantos.github.io/categories/demo" class="no-underline category near-white dim">Demo</a>
+								<span class="display-print">at https://veronica-desantos.github.io/Classification/</span>
+							
+						
+					</h2>
+				</div>
+
+				
+				
+				
+				
+
+			</div>
+		</header>
+		
+		<main role="main">
+		
+<article class="center bg-white br-3 pv1 ph4 lh-copy f5 nested-links mw7">
+	<h3 id="random-forest-classification">Random Forest Classification</h3>
+<p>We will choose the two most frequent families of trees and use the random forest classifier machine learning technique. The classifier will take the diameter at breast height and the year that is was planted and the location it is planted and return the family of the tree.</p>
+<p>Diameter at breast height (otherwise known as DBH), is the standard for measuring trees. It refers to the tree diameter measured at 4.5 feet (approximately 1,4 meters) above the ground.</p>
+<p>As mentioned earlier, column Diameter Breast Height has high rates of missing values. Because of the volume of the dataset, when dropping the missing values, we still had a large amount of data to train and test our model. (23535 rows).</p>
+<p>The most popular families of trees are:</p>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Myrtaceae</td>
+<td>7333</td>
+</tr>
+<tr>
+<td>Ulmaceae</td>
+<td>4585</td>
+</tr>
+</tbody>
+</table>
+<p>It can be seen that our dataset is somewhat balanced.
+Myrtaceae family (62%) occurs almost 1.5 times more often than the Fabaceae family which takes over 38% of the data. 
+<a href="http://amsantac.co/blog/en/2016/09/20/balanced-image-classification-r.html">Balanced_classification_dataset</a></p>
+<h3 id="encode-the-variables">Encode the variables</h3>
+<p>This step is necessary since Random Forest model is unable to read strings or any non-numeric datatypes (<a href="https://towardsdatascience.com/my-random-forest-classifier-cheat-sheet-in-python-fedb84f8cf4f">Random Forest Classifier in Python</a>). The variable that needs to be encoded is the Location. There are many ways to turn the categorical variables into numeric ones ( for instance the OneHotEncoder from sklearn etc.) but we chose pandas fuction get_dummies for it.( ref: our group&rsquo;s assignment 2).</p>
+<table>
+<thead>
+<tr>
+<th>Count</th>
+<th>Family</th>
+<th>Diameter Breast Height</th>
+<th>Located in</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Ulmaceae</td>
+<td>40.0</td>
+<td>Street</td>
+<td>2000.0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Myrtaceae</td>
+<td>39.0</td>
+<td>Street</td>
+<td>1997.0</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Myrtaceae</td>
+<td>34.0</td>
+<td>Street</td>
+<td>2000.0</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Myrtaceae</td>
+<td>8.0</td>
+<td>Street</td>
+<td>2007.0</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Myrtaceae</td>
+<td>13.0</td>
+<td>Street</td>
+<td>2007.0</td>
+</tr>
+</tbody>
+</table>
+<p>Instead of encoding the family variable, we just converted it to 0 and 1.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Park</th>
+<th>Street</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>2000.0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0</td>
+<td>1</td>
+<td>1997.0</td>
+</tr>
+<tr>
+<td>11</td>
+<td>0</td>
+<td>1</td>
+<td>2000.0</td>
+</tr>
+<tr>
+<td>18</td>
+<td>0</td>
+<td>1</td>
+<td>2007.0</td>
+</tr>
+<tr>
+<td>29</td>
+<td>0</td>
+<td>1</td>
+<td>2007.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evaluate-the-model">Evaluate the model</h3>
+<p>70% of the data was used for training and 30% test. We selected to evaluate the model we built via the accuracy, the cross validation score and confusion matrix.</p>
+<p>The accuracy of the model is 71.6 %</p>
+<p>0.72 accuracy with a standard deviation of 0.01</p>
+<p><img src="/img/matrix.png" alt="Matrix"></p>
+<p>The confusion matrix allowed us to visualize the performance of the classifier. It can be seen that the model made 3576 predictions. From those, the model predicted correctly 2259.</p>
+<h3 id="is-the-model-overfitting">Is the model overfitting?</h3>
+<p>Overfitting occurs when the model learns the training set very well but is unable to generalize its knowledge to the test set.</p>
+<p>The difference between the accuracies is marginal, so the classifier is not overfitting.</p>
+</article>
+
+		</main>
+		
+				<div class="hide-print sans-serif f6 f5-l mt5 ph3 pb6 center nested-copy-line-height lh-copy nested-links mw-100 measure-wide">
+		<div class="about-the-author">
+		
+			
+			
+				
+					<p><a href="https://www.dtu.dk/english"><img src="/img/dtu.png" alt="DTU"></a></p>
+<p>Final project - 02806 Social data analysis and visualization. 
+<a href="https://github.com/suneman/socialdata2021/wiki/Final-Project">More about the assignment</a>.</p>
+
+				
+			
+		
+		</div>
+		
+	</div>
+
+		
+		
+		
+		<footer class="hide-print sans-serif f6 fw1 bg-black near-white bottom-0 w-100 pa3" role="contentinfo">
+			<p class="w-50 fr tr">
+			<a class="no-underline near-white" href="https://github.com/xaprb/story"><img class="dib" title="Made with Hugo and Story" alt="Story logo" src="https://veronica-desantos.github.io/img/story-logo-white.svg" style="width: 1.5rem; height: 1.5rem" /></a>
+			</p>
+			<p class="w-50 near-white">
+				&copy; 2021 
+			</p>
+		</footer>
+		
+	
+	
+	</body>
+</html>
