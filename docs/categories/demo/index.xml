@@ -6,22 +6,31 @@
     <description>Recent content in Demo on Melbourne City Trees</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 18:26:02 +0200</lastBuildDate><atom:link href="https://veronica-desantos.github.io/categories/demo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 23:26:02 +0200</lastBuildDate><atom:link href="https://veronica-desantos.github.io/categories/demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction and Understanding the Data</title>
       <link>https://veronica-desantos.github.io/Introduction/</link>
-      <pubDate>Sun, 09 May 2021 18:26:02 +0200</pubDate>
+      <pubDate>Sun, 09 May 2021 23:26:02 +0200</pubDate>
       
       <guid>https://veronica-desantos.github.io/Introduction/</guid>
       <description>&lt;p&gt;An overview of the project and motivations.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>ABC</title>
-      <link>https://veronica-desantos.github.io/ABC/</link>
+      <title>Distribution of the Trees</title>
+      <link>https://veronica-desantos.github.io/Distribution/</link>
+      <pubDate>Sun, 09 May 2021 19:26:02 +0200</pubDate>
+      
+      <guid>https://veronica-desantos.github.io/Distribution/</guid>
+      <description>&lt;p&gt;Fundamental distributions of the data.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Most Common Trees Families Planted</title>
+      <link>https://veronica-desantos.github.io/Families/</link>
       <pubDate>Sat, 08 May 2021 18:26:02 +0200</pubDate>
       
-      <guid>https://veronica-desantos.github.io/ABC/</guid>
+      <guid>https://veronica-desantos.github.io/Families/</guid>
       <description>&lt;p&gt;This article is a demo of Story&amp;rsquo;s ability to typeset mathematical equations,
 both inline and in block form.&lt;/p&gt;</description>
     </item>
