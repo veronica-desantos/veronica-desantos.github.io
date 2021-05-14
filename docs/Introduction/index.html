@@ -61,7 +61,7 @@
 						
 							
 								Published
-								<time datetime="2021-05-09T18:26:02&#43;02:00">May 9, 2021</time>
+								<time datetime="2021-05-09T23:26:02&#43;02:00">May 9, 2021</time>
 								<span class="display-print">by </span>
 								 in <a href="https://veronica-desantos.github.io/categories/demo" class="no-underline category near-white dim">Demo</a>
 								<span class="display-print">at https://veronica-desantos.github.io/Introduction/</span>
@@ -83,6 +83,128 @@
 <article class="center bg-white br-3 pv1 ph4 lh-copy f5 nested-links mw7">
 	<p>An overview of the project and motivations.</p>
 <p>We decided to analyze the dataset from the trees of the city of Melbourne. We thought it would be interesting because it is something that is very easily overlook. When walking into a park or down the street people tend not to appreciate the green. Those trees are the equivalent of a natural cooling system.</p>
+<h3 id="what-is-the-total-size-of-your-data-mb-number-of-rows-number-of-variables-etc">What is the total size of your data? (MB, number of rows, number of variables, etc.</h3>
+<p>The size of the dataset is 14.8 Mb Urban_forest_in_Mebourne. There are 74.6K rows, each row representing a tree and 19 columns. The columns we decided to use in our analysis are mostly the&rsquo;Common Name' of the tree, the &lsquo;Family&rsquo; that the tree belongs to , the&rsquo;Diameter Breast Height', the &lsquo;Date Planted&rsquo; and the &lsquo;Located in&rsquo; for the machine learning.</p>
+<h3 id="what-are-other-properties-what-is-the-date-range-is-is-it-geo-data-then-a-quick-plot-of-locations-etc">What are other properties? (What is the date range? Is is it geo-data?, then a quick plot of locations, etc.)</h3>
+<p>There is geo-data in the dataset (&lsquo;Latitude&rsquo;, &lsquo;Longitude&rsquo;) that we are planning to use for heat-map representation. We are also going to incorporate the &lsquo;Life Expectancy&rsquo; column so that the life expectancy is exceeded, the tree will disappear from the map.</p>
+<p>The data has shape of 74579 rows and 19 columns .
+The columns of the data are:
+Index([&lsquo;CoM ID&rsquo;, &lsquo;Common Name&rsquo;, &lsquo;Scientific Name&rsquo;, &lsquo;Genus&rsquo;, &lsquo;Family&rsquo;,
+&lsquo;Diameter Breast Height&rsquo;, &lsquo;Year Planted&rsquo;, &lsquo;Date Planted&rsquo;,
+&lsquo;Age Description&rsquo;, &lsquo;Useful Life Expectency&rsquo;,
+&lsquo;Useful Life Expectency Value&rsquo;, &lsquo;Precinct&rsquo;, &lsquo;Located in&rsquo;, &lsquo;UploadDate&rsquo;,
+&lsquo;CoordinateLocation&rsquo;, &lsquo;Latitude&rsquo;, &lsquo;Longitude&rsquo;, &lsquo;Easting&rsquo;, &lsquo;Northing&rsquo;],
+dtype=&lsquo;object&rsquo;).
+The variables of each column are:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CoM ID</td>
+<td>int64</td>
+</tr>
+<tr>
+<td>Common Name</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Scientific Name</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Genus</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Family</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Diameter Breast Height</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Year Planted</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Date Planted</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Age Description</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Useful Life Expectency</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Useful Life Expectency Value</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Precinct</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Located in</td>
+<td>object</td>
+</tr>
+<tr>
+<td>UploadDate</td>
+<td>object</td>
+</tr>
+<tr>
+<td>CoordinateLocation</td>
+<td>object</td>
+</tr>
+<tr>
+<td>Latitude</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Longitude</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Easting</td>
+<td>float64</td>
+</tr>
+<tr>
+<td>Northing</td>
+<td>float64</td>
+</tr>
+</tbody>
+</table>
+<h3 id="number-of-trees-planted-in-the-park-and-streets">Number of Trees planted in the Park and Streets.</h3>
+<p>Not surprisingly, more trees were planted throughout the years in the parks of Melbourne.</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Park</td>
+<td>44818</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>29455</td>
+</tr>
+</tbody>
+</table>
+<h3 id="heading"></h3>
+<p><img src="/img/TreesPlanted.png" alt="A page in Story, with and without the header"></p>
+<p>###</p>
 </article>
 
 		</main>
