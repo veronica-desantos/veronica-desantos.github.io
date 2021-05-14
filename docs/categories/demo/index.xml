@@ -31,8 +31,25 @@
       <pubDate>Sat, 08 May 2021 18:26:02 +0200</pubDate>
       
       <guid>https://veronica-desantos.github.io/Families/</guid>
-      <description>&lt;p&gt;This article is a demo of Story&amp;rsquo;s ability to typeset mathematical equations,
-both inline and in block form.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Interactive visualization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Geographical Visualizations</title>
+      <link>https://veronica-desantos.github.io/Geo/</link>
+      <pubDate>Fri, 07 May 2021 18:26:02 +0200</pubDate>
+      
+      <guid>https://veronica-desantos.github.io/Geo/</guid>
+      <description>&lt;p&gt;Geographical Visualizations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Explainer Notebook</title>
+      <link>https://veronica-desantos.github.io/ExpNote/</link>
+      <pubDate>Fri, 07 May 2021 15:26:02 +0200</pubDate>
+      
+      <guid>https://veronica-desantos.github.io/ExpNote/</guid>
+      <description>&lt;p&gt;An explainer Jupyter Notebook.&lt;/p&gt;</description>
     </item>
     
   </channel>
